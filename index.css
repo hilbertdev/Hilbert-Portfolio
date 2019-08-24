@@ -1,0 +1,32 @@
+#navBar {
+   grid-area: navBar; 
+}
+#socials {
+    grid-area: socials;
+}
+#logo {
+    grid-area: logo;
+}
+#content {
+    grid-area: myContent;
+}
+#footer {
+    grid-area: myFooter;
+}
+
+#web-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr auto;
+    grid-template-areas: 
+    'socials . logo . navBar'
+    ' . myContent myContent myContent . '
+    '.  myFooter  myFooter  myFooter . ';
+
+    justify-content: space-between;
+}
+ul li {
+    list-style: none;
+}
+
+
+
