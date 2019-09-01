@@ -35,7 +35,7 @@ body > .container {
     
 }
 #sidelinks ul li {
-    border: 2px solid blue;
+    background-color: black;
     margin-top: 5px;
     transition: opacity 1s;
     opacity: .2;
@@ -48,11 +48,16 @@ body > .container {
 }
 #sidelinks ul li i
 {
-    -webkit-transition: font-size 2s;
-    transition: font-size 2s;
+    -webkit-transition: font-size 1.1s;
+    transition: font-size 1.1s;
+}
+#sidelinks ul li a 
+{
+  text-decoration: none;
+  color: white;
 }
 #sidelinks ul li i:hover {
-   font-size: 7vh;
+   font-size: 5.5vh;
 }
 .fab {
     font-size: 5vh;
@@ -62,9 +67,9 @@ body > .container {
 }
 
 #sidelinks {
-    position: absolute;
+    position: fixed;
     top: 50%;
-    right: 0%;
+    right: 15%;
 }
 
 
