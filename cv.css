@@ -1,3 +1,11 @@
+body {
+    background-image: url("homepage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -7,21 +15,39 @@
 header .container {
     grid-template-columns: 1fr 2fr;
 }
+#profile .container {
+    grid-template-columns: .5fr 1fr;
+}
+.profile-image{
+    justify-items: center;
+}
+#objectives .container {
+    grid-template-columns: 1fr 1fr;
+}
+#personal .container {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#education .container {
+    grid-template-columns: 1fr 1fr;
+
+    justify-content: space-between;
+}
+section > .container > div {
+    border: 5px solid transparent;
+}
 a {
     text-decoration: none;
     color: white;
+}
+li {
+    list-style-type: none;
 }
 nav ul li {
     font-size: 25px;
     display: inline-block;
     margin-right: 3.5%;
 }
-body {
-    background-image: url("homepage.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: aliceblue; 
-}
+
 
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
