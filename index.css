@@ -12,7 +12,7 @@ body {
     margin: auto;
     overflow: hidden;   
     display: grid;
-    grid-template-rows: 25% 50% 25%;
+    grid-template-rows: .1fr .2fr .1fr;
 }
 
 #showcase .container {
@@ -28,7 +28,6 @@ header .container {
 }
 .show-case {
     width: 2fr;
-    height: 1fr;;
     grid-column: 2/3;
     justify-content: center;
 }
@@ -84,7 +83,7 @@ nav ul {
 }
 nav ul li {
     display: inline-block;
-    margin-right: 3.5%;
+    margin-right: 3.5vh;
 }
 nav ul li a {
     text-decoration: none;
