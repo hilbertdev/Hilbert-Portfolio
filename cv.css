@@ -13,16 +13,26 @@ body {
     overflow: hidden;
 }
 header .container {
+    width: 100%;
     grid-template-columns: 1fr 2fr;
 }
 #profile .container {
-    grid-template-columns: .5fr 1fr;
+    grid-template-columns: 150px 450px;
+    justify-content: left;
 }
-.profile-image{
-    justify-items: center;
+.profile-image {
+    position: relative;
+    background-image: url("images/download.png");
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 100px;
+    min-width: 120px;
+    min-height: 200px;
 }
+
 #objectives .container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:  450px 300px;
+    justify-content: space-around;
 }
 #personal .container {
     grid-template-columns: 1fr 1fr 1fr;
@@ -56,7 +66,36 @@ h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
-h2:before {
-    border: 10px solid white;
-    border-radius: 10px;
+
+
+@media only screen and (max-width: 580px) {
+    header .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    #profile .container {
+        grid-template-columns: 1fr;
+    }
+    .profile-image{
+        justify-items: center;
+    }
+    #objectives .container {
+        grid-template-columns: 1fr;
+    }
+    #personal .container {
+        grid-template-columns: 1fr;
+    }
+    #education .container {
+        grid-template-columns: 1fr;
+    
+        justify-content: space-between;
+    }
+    nav ul li {
+        font-size: 25px;
+        display: block;
+        margin-bottom: 3.5%;
+    }
+    h1 {
+        font-size: 10vw;
+    }
 }
